@@ -10,7 +10,7 @@ def tournamentWinner(competitions,reusults):
         if scores[winningTeam]>scores[currentBestTeam]:
             currentBestTeam = winningTeam
     return currentBestTeam
-def updateScores(team,point,scores):
+def updateScores(team,points,scores):
     if team not in scores:
         scores[team] = 0
     scores[team] += points
